@@ -478,6 +478,9 @@ export function getCommonConfig(wco: WebpackConfigOptions): Configuration {
         type: 'memory',
         maxGenerations: 1,
       },
+    snapshot: {
+      managedPaths: []
+    },
     optimization: {
       minimizer: extraMinimizers,
       moduleIds: 'deterministic',
